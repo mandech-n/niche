@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+    <div class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/categories_img_01.jpg' %}" alt="" />
+                        <a class="btn hvr-hover" href="{% url 'signup/student' %}">Student</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/categories_img_02.jpg' %}" alt="" />
+                        <a class="btn hvr-hover" href="{% url 'teacher' %}">Teacher</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/categories_img_03.jpg' %}" alt="" />
+                        <a class="btn hvr-hover" href="{% url 'partner' %}">Partner</a>
+                    </div>n
+                </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/categories_img_02.jpg' %}" alt="" />
+                        <a class="btn hvr-hover" href="{% url 'donor' %}">Donor</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="{% static 'images/categories_img_03.jpg' %}" alt="" />
+                        <a class="btn hvr-hover" href="{% url 'public' %}">Public</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Categories -->
+
+
+    <!-- End Blog  -->
+{% endblock content %}
+
+
