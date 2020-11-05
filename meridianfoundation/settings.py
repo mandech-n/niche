@@ -17,13 +17,19 @@ INSTALLED_APPS = [
     'core',
     'users',
     'crispy_forms',
+    'ckeditor_uploader',
 
     'django.contrib.sites',
+    'tinymce',
+    'ckeditor',
 
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
 ]
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -92,7 +98,7 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 SITE_ID = 1
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = 'login'
 
 AUTH_USER_MODEL = "core.User"
